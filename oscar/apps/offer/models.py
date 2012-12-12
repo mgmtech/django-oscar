@@ -251,7 +251,7 @@ class Benefit(models.Model):
                                                              'range': unicode(self.range).lower()}
 
         if self.max_affected_items:
-            desc += ungettext(" (max 1 item)", " (max %d items)", self.max_affected_items) % self.max_affected_items
+            desc += " (max 1 item)", " (max %d items)" % self.max_affected_items
 
         return desc
 
